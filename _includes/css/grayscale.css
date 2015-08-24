@@ -261,12 +261,12 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 .registration-section {
     width: 100%;
-    padding: 150px 0;
+    padding: 15px 0;
     color: #fff;
     background: url(img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: {{ site.color.primary-dark }};
@@ -280,12 +280,11 @@ a:focus {
 #map {
     width: 100%;
     height: 200px;
-    margin-top: 100px;
 }
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 200px;
+        padding-top: 40px;
     }
 
     .download-section {
@@ -294,7 +293,6 @@ a:focus {
 
     #map {
         height: 400px;
-        margin-top: 250px;
     }
 }
 
@@ -346,13 +344,25 @@ ul.banner-social-buttons li {
         margin-bottom: 0;
     }
 }
-
+/*
 footer {
     padding: 50px 0;
-}
+} */
+.footer {
+        position:relative;
+        bottom: 0;
+        width: 100%;
+        /* Set the fixed height of the footer here */
+        height: 60px;
+        background-color:{{ site.color.nav_color}};
 
-footer p {
-    margin: 0;
+        }
+
+
+footer h5 {
+    margin: 20px 0;
+    color: {{ site.color.primary-dark }};
+
 }
 
 ::-moz-selection {
@@ -389,7 +399,7 @@ body {
 }
 
 .btn-primary{background-color: {{ site.color.nav_color}}; border-color:{{ site.color.nav_color}};}
-.btn-primary:hover{background-color:#009884; border-color:#009884}
+.btn-primary:hover{background-color:#000000; border-color:#000000}
 /*
 @media (max-width: 600px) { 
         h4 {
